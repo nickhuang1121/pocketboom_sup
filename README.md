@@ -6,7 +6,7 @@
 
 - `index.html`：遊戲介紹、特色、截圖預留區、下載連結預留區。
 - `support.html`：聯絡資訊、問題回報方式、原生可展開 FAQ。
-- `privacy.html`：繁體中文隱私政策草稿與待確認項目。
+- `privacy.html`：開發者提供的繁體中文隱私權政策（更新日期：2026 年 10 月 9 日）。
 - `assets/style.css`、`assets/site.js`：共用樣式與漸進增強。
 - `assets/images/robot.png`：機器人素材及網站圖示。
 - `.nojekyll`：GitHub Pages 直接發布靜態檔案。
@@ -21,14 +21,14 @@ python3 -m http.server 8000
 
 在瀏覽器開啟 http://localhost:8000 。網站主要內容、頁面導覽與 FAQ 在停用 JavaScript 時仍可使用。
 
-## 送審前必填
+## 送審前檢查
 
-1. 搜尋 `【待填` 與 `【待開發者確認`，補上 support.html、privacy.html 的真實信箱（文字與 mailto 連結）。確認信箱可收信。
-2. 查核正式遊戲版本的資料蒐集、傳輸、儲存、SDK、第三方服務、保存及刪除機制，改寫 privacy.html 各段。確認後移除草稿告示，填入實際政策更新日期。同步核對 App Store Connect 的 App Privacy 回答。
+1. 支援信箱已設定為 `nickhuang1121@gmail.com`，support.html 與 privacy.html 均附有 mailto 連結。送審前請確認信箱可收信。
+2. 隱私權政策已依開發者提供的正式內容更新，日期為 2026 年 10 月 9 日。送審時請確認遊戲版本及 App Store Connect 的 App Privacy 回答與本政策一致。
 3. App Store 網址確認後，將首頁 `.unavailable` 的 span 換成實際下載連結，例如 `<a class="button" href="實際的 App Store HTTPS 網址">在 App Store 下載</a>`，並更新 download-note。
 4. 有實機截圖後，將 `.screen > div` 換成帶有描述性 alt 的 img；圖片存入 assets/images，以相對路徑引用，CSS 設定 width:100%、height:auto。預留框並非實機畫面。
 5. 確認有權公開使用網站圖片。
-6. 上線後用手機及無痕視窗檢查三頁與信箱連結。草稿政策及未填信箱不應直接作為正式送審資料。
+6. 上線後用手機及無痕視窗檢查三頁與信箱連結。
 
 ## 部署至 GitHub Pages（不需購買網域）
 
@@ -58,4 +58,4 @@ python3 -m http.server 8000
 
 ## 網站資料行為
 
-網站沒有 Cookie、追蹤、第三方分析、外部字型、持久儲存或資料回報表單；JavaScript 僅同步 FAQ 展開狀態。託管平台及遊戲自身的資料行為需分別確認。
+網站沒有 Cookie、追蹤、第三方分析、外部字型、持久儲存或資料回報表單；JavaScript 僅同步 FAQ 展開狀態。遊戲資料處理說明以 privacy.html 的開發者政策為準，網站託管平台的資料行為需另外確認。
